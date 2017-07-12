@@ -36,12 +36,20 @@ nav a {
 }
 
 /* Body */
-
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; 
+}
 .container {
   border: solid 1px red;
-  display: flex; 
+
 }
 
+.column {
+  display: inline-flex;
+  flex-direction: column;
+}
 .column.large {
   width: 630px;
 }
