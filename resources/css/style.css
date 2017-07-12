@@ -3,4 +3,53 @@ header {
   font-family: "Verdana";
   font-size: 14px;
   font-weight: bold;
+  border-bottom: solid 1px black;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  color: mediumAquamarine;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+nav {
+  text-align: right;
+}
+
+nav span {
+  padding: 0 10px;
+  display: inline-block;
+
+}
+nav a {
+  color: black;
+}
+
+/* Body */
+
+.container {
+  border: solid 1px red;
+  display: flex; 
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
 }
