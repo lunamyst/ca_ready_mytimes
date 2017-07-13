@@ -39,7 +39,7 @@ nav a {
 .main {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 .container {
   border: solid 1px red;
@@ -50,6 +50,7 @@ nav a {
   display: inline-flex;
   flex-direction: column;
 }
+
 .column.large {
   width: 630px;
 }
@@ -60,4 +61,32 @@ nav a {
 
 .column.small {
   width: 240px;
+}
+
+/* Headline Styling */
+.headline.with-image {
+  font-family: "Georgia";
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  min-height: 300px;
+}
+
+#headline-one {
+  background: url("../images/img-story-main-champagne.png");
+  font-size: 40px;
+
+}
+
+#headline-two {
+  background: url("../images/img-story-2-running.png");
+
+}
+
+#headline-three {
+  background: url("../images/img-story-3-camera.png");
+}
+
+#headline-four {
+  background: url("../images/img-story-1-cat.png")
 }
