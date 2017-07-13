@@ -65,6 +65,8 @@ nav a {
 
 /* Headline Styling */
 .headline.with-image {
+  display: flex;
+  align-content: flex-start;
   font-family: "Georgia";
   font-weight: bold;
   font-size: 30px;
@@ -75,11 +77,13 @@ nav a {
 #headline-one {
   background: url("../images/img-story-main-champagne.png");
   font-size: 40px;
+  text-align: left;
 
 }
 
 #headline-two {
   background: url("../images/img-story-2-running.png");
+  justify-content: center;
 
 }
 
@@ -88,5 +92,6 @@ nav a {
 }
 
 #headline-four {
-  background: url("../images/img-story-1-cat.png")
+  background: url("../images/img-story-1-cat.png");
+  text-align: center;
 }
