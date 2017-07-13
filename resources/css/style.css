@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 /* Header */
 header {
   font-family: "Verdana";
@@ -35,12 +39,13 @@ nav a {
   color: black;
 }
 
-/* Body */
+/* Body - Styling the big columns */
 .main {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
+/* .container class was applied to almost every div so that in building the website I could see the different blocks. Comment out the border when done. */
 .container {
   border: solid 1px red;
 
@@ -66,7 +71,7 @@ nav a {
 /* Headline Styling */
 .headline.with-image {
   display: flex;
-  align-content: flex-start;
+  align-items: flex-start;
   font-family: "Georgia";
   font-weight: bold;
   font-size: 30px;
@@ -74,24 +79,38 @@ nav a {
   min-height: 300px;
 }
 
+.headline.with-image p {
+  margin-top: 0;
+}
+
 #headline-one {
   background: url("../images/img-story-main-champagne.png");
   font-size: 40px;
   text-align: left;
-
 }
 
 #headline-two {
   background: url("../images/img-story-2-running.png");
-  justify-content: center;
+  text-align: center;
 
 }
 
 #headline-three {
   background: url("../images/img-story-3-camera.png");
+  text-align: center;
 }
 
 #headline-four {
   background: url("../images/img-story-1-cat.png");
   text-align: center;
+}
+
+/* Styling the elements within the leftmost and largest column */
+.minor-article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.minor-article div {
+  max-width: 300px;
 }
