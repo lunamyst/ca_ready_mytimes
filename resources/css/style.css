@@ -13,6 +13,9 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 .header-left {
@@ -44,6 +47,8 @@ nav a {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  padding-top: 100px;
+  position: relative;
 }
 /* .container class was applied to almost every div so that in building the website I could see the different blocks. Comment out the border when done. */
 .container {
@@ -113,4 +118,56 @@ nav a {
 
 .minor-article div {
   max-width: 300px;
+}
+
+/* Styling the elements within the rightmost and smallest column */
+.column.small h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.column.small p {
+  background-color: WhiteSmoke;
+  font-family: "Verdana";
+  font-size: 12px;
+  color: DimGray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+
+  border-bottom: solid 1px black;
+}
+
+/* Styling the Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  min-height: 300px;
+  margin-top: 50px;
+  background-color: mediumAquamarine;
+  font-family: "Verdana";
+  font-size: 12px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div {
+  text-align: center;
+}
+
+footer h1 {
+  font-family: "Georgia";
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: solid 2px white;
+  padding-right: 20px;
+  margin-right: 10px;
 }
